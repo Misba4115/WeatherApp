@@ -1,0 +1,132 @@
+/* Base page background */
+body {
+  background: #1f2937; /* dark navy */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Outer box for everything */
+.app-wrapper {
+  background: #c2d3dc; /* soft gray-blue */
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* App title */
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Search input box */
+.search-box {
+  width: 100%;
+}
+
+.search-box-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather card that changes with conditions */
+.weather-card {
+  background: #e0f7fa; /* default soft cyan */
+  color: #1f2937;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Weather display text styling */
+.weather-card .city {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.weather-card .date {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.weather-card .temp {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.weather-card .weather {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.weather-card .hi-low {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* Weather-specific backgrounds */
+.weather-card.sunny {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #000;
+}
+
+.weather-card.rain {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  color: #000;
+}
+
+.weather-card.cloudy {
+  background: linear-gradient(to bottom right, #d7d2cc, #304352);
+  color: #ffffff;
+}
+
+.weather-card.snow {
+  background: linear-gradient(to right, #e6dada, #274046);
+  color: #000;
+}
+
+.weather-card.thunderstorm {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.weather-card.default-weather {
+  background: #e0f7fa;
+  color: #1f2937;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
