@@ -13,7 +13,9 @@ function setQuery(e) {
 }
 
 function getResults(query) {
-  fetch(`${apikey.base}weather?q=${query}&units=metric&appid=${apikey.key}`)
+  const url = `${apikey.base}weather?q=${query}&units=metric&appid=${apikey.key}`;
+  console.log("Fetching: ",url);
+  fetch(url)
     .then(res => res.json())
     .then(displayResults)
     .catch(() => alert("City not found."));
