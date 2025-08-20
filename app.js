@@ -60,4 +60,5 @@ function dateBuilder(d) {
   const year = d.getFullYear();
 
   return `${day}, ${date} ${month} ${year}`;
+
 }
